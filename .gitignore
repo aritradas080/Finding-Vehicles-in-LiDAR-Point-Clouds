@@ -1,4 +1,45 @@
+# Python environments and caches
 .venv/
+venv/
+env/
+ENV/
 __pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Local datasets, downloaded archives, and generated results
 data/
+datasets/
+nuscenes/
 output/
+*.tgz
+*.tar
+*.tar.gz
+*.log
+
+# Local credentials and configuration (safe examples may be committed)
+.env
+.env.*
+!.env.example
+!.env.sample
+.aws/
+.ssh/
+credentials.json
+credentials-*.json
+client_secret*.json
+service-account*.json
+secrets.*
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini

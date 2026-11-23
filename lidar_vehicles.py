@@ -1,7 +1,3 @@
-"""Explainable single-scan vehicle candidates with ego-compensated association.
-
-Annotations are loaded only after detection, for visualization and evaluation.
-"""
 import argparse
 import csv
 import json
