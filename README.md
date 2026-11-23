@@ -8,7 +8,29 @@ A LiDAR scan is a collection of measured points, $P = \{(x_i, y_i, z_i)\}_{i=1}^
 
 ## Workflow
 
-![Processing order from the LiDAR file to visualization and evaluation](docs/screenshots/workflow.png)
+```text
+LiDAR file
+    ↓
+Convert sensor coordinates to vehicle coordinates
+    ↓
+Crop the useful region
+    ↓
+Voxel downsampling
+    ↓
+RANSAC road-plane estimation
+    ↓
+Remove ground points
+    ↓
+DBSCAN object clustering
+    ↓
+Estimate cluster dimensions with PCA
+    ↓
+Apply vehicle geometry rules
+    ↓
+Associate detections across frames
+    ↓
+Visualize and evaluate
+```
 
 ## Step 1. Read the LiDAR file
 
