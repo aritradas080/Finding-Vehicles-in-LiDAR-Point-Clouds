@@ -4,6 +4,23 @@ A LiDAR scan is a collection of measured points, $P = \{(x_i, y_i, z_i)\}_{i=1}^
 
 **Which groups of points are likely to belong to vehicles?**
 
+## Demonstrations
+
+These animations show vehicle candidates detected directly from LiDAR points.
+Solid colored boxes show detections; dashed green boxes show reference cars used
+only for evaluation. IDs are provisional and can change across frames.
+
+### Scene 0061: intersection and construction
+
+![LiDAR vehicle detections in scene 0061](assets/scene-0061.gif)
+
+### Scene 0103: traffic, pedestrians, and bicycle-rack clutter
+
+![LiDAR vehicle detections in scene 0103](assets/scene-0103.gif)
+
+These are baseline results with false detections and missed cars; see the
+evaluation and limitations below.
+
 ## Workflow
 
 ```text
